@@ -1,10 +1,10 @@
 %define module	Rose-Object
 %define	modprefix Rose
 
-%define version	0.81
+%define version	0.84
 
 %define	rel	1
-%define release	%mkrel %{rel}
+%define release	%mkrel 1
 
 # circular dependency
 %define _requires_exceptions perl(Rose::DateTime
