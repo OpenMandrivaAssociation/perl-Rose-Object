@@ -1,7 +1,7 @@
 %define module	Rose-Object
 %define	modprefix Rose
 
-%define version	0.84
+%define version	0.85
 
 %define	rel	1
 %define release	%mkrel 1
