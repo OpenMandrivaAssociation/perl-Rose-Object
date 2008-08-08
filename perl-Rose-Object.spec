@@ -4,7 +4,7 @@
 %define version	0.85
 
 %define	rel	1
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 # circular dependency
 %define _requires_exceptions perl(Rose::DateTime
