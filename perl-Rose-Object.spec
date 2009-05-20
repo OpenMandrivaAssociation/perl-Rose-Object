@@ -1,10 +1,8 @@
-%define module	Rose-Object
-%define	modprefix Rose
-
-%define version	0.85
-
-%define	rel	1
-%define release	%mkrel 2
+%define module	    Rose-Object
+%define	modprefix   Rose
+%define up_version  0.855
+%define version     %perl_convert_version %{up_version}
+%define release     %mkrel 1
 
 # circular dependency
 %define _requires_exceptions perl(Rose::DateTime
@@ -15,22 +13,19 @@ Version:	%{version}
 Release:	%{release}
 License:	Artistic/GPL
 Group:		Development/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{modprefix}/%{module}-%{version}.tar.bz2
-Url:		http://search.cpan.org/dist/%{module}/
-BuildRoot:	%{_tmppath}/%{name}-buildroot
-%if %{mdkversion} < 1010
-BuildRequires:	perl-devel
-%endif
+URL:        http://search.cpan.org/dist/%{module}
+Source:     http://www.cpan.org/modules/by-module/Rose/%{module}-%{up_version}.tar.gz
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test::Simple)
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Rose::Object is a generic object base class. It provides very little
 functionality, but a healthy dose of convention.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{module}-%{up_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
@@ -47,7 +42,7 @@ rm -rf %{buildroot}
 rm -rf %{buildroot}
 
 %files
-%defattr(644,root,root,755)
+%defattr(-,root,root)
 %doc Changes
 %{_mandir}/man*/*
 %{perl_vendorlib}/%{modprefix}
