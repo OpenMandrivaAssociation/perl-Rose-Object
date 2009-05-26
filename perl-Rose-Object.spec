@@ -1,7 +1,7 @@
 %define module	    Rose-Object
 %define	modprefix   Rose
-%define up_version  0.855
-%define version     %perl_convert_version %{up_version}
+%define upstream_version  0.855
+%define version     %perl_convert_version %{upstream_version}
 %define release     %mkrel 1
 
 # circular dependency
@@ -14,7 +14,7 @@ Release:	%{release}
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Rose/%{module}-%{up_version}.tar.gz
+Source:     http://www.cpan.org/modules/by-module/Rose/%{module}-%{upstream_version}.tar.gz
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test::Simple)
 BuildArch:	noarch
@@ -25,7 +25,7 @@ Rose::Object is a generic object base class. It provides very little
 functionality, but a healthy dose of convention.
 
 %prep
-%setup -q -n %{module}-%{up_version}
+%setup -q -n %{module}-%{upstream_version}
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
