@@ -1,6 +1,6 @@
 %define module	    Rose-Object
 %define	modprefix   Rose
-%define upstream_version  0.855
+%define upstream_version 0.856
 %define version     %perl_convert_version %{upstream_version}
 %define release     %mkrel 1
 
