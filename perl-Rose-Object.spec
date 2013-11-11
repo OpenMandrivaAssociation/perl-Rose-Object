@@ -1,6 +1,6 @@
 %define module	    Rose-Object
 %define	modprefix   Rose
-%define upstream_version 0.859
+%define upstream_version 0.860
 
 # circular dependency
 %if %{_use_internal_dependency_generator}
@@ -12,11 +12,11 @@
 Summary:	A simple object base class
 Name:		perl-%{module}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:        http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Rose/%{module}-%{upstream_version}.tar.gz
+Source:     http://www.cpan.org/modules/by-module/Rose/Rose-Object-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
@@ -97,4 +97,5 @@ functionality, but a healthy dose of convention.
 
 * Fri May 19 2006 Scott Karns <scottk@mandriva.org> 0.80-1mdk
 - Initial MDV release
+
 
