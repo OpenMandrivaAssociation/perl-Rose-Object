@@ -12,7 +12,7 @@
 Summary:	A simple object base class
 Name:		perl-%{module}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	3
 License:	Artistic/GPL
 Group:		Development/Perl
 URL:        http://search.cpan.org/dist/%{module}
