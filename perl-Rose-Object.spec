@@ -15,7 +15,7 @@ Version:	%perl_convert_version %{upstream_version}
 Release:	3
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:        http://search.cpan.org/dist/%{module}
+URL:        https://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/Rose/Rose-Object-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
