@@ -18,6 +18,7 @@ Group:		Development/Perl
 URL:        https://search.cpan.org/dist/%{module}
 Source:     http://www.cpan.org/modules/by-module/Rose/Rose-Object-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test::Simple)
