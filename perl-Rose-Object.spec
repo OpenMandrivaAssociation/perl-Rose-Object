@@ -11,12 +11,12 @@
 
 Summary:	A simple object base class
 Name:		perl-%{module}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	%{upstream_version}
+Release:	4
 License:	Artistic/GPL
 Group:		Development/Perl
-URL:        https://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Rose/Rose-Object-%{upstream_version}.tar.gz
+URL:        https://rose.googlecode.com
+Source:     https://cpan.metacpan.org/authors/id/J/JS/JSIRACUSA/Rose-Object-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
